@@ -1,4 +1,1 @@
-type Props = { title?: string; children?: React.ReactNode };
-export default function Component(props: Props) {
-  return <div>{props.title || "Компонент"}{props.children}</div>;
-}
+export default function Chart() { return <div className="p-4 border rounded">[Chart placeholder]</div>; }

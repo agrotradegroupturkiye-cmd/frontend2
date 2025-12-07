@@ -1,12 +1,2 @@
-import './globals.css';
-import type { ReactNode } from 'react';
-
-export default function RootLayout({ children }: { children: ReactNode }) {
-  return (
-    <html lang="ru">
-      <body className="bg-white text-gray-900 antialiased min-h-screen">
-        {children}
-      </body>
-    </html>
-  );
-}
+import '@/styles/globals.css';
+export default function RootLayout({ children }: { children: React.ReactNode }) { return (<html><body>{children}</body></html>); }

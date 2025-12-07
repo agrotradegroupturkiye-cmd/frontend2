@@ -21,3 +21,11 @@ body {
   background-color: #ffffff;
   color: #1c1c1e;
 }
+
+@keyframes ripple {
+  0% { transform: scale(0); opacity: 0.5; }
+  100% { transform: scale(8); opacity: 0; }
+}
+.animate-ripple {
+  animation: ripple 0.5s linear;
+}

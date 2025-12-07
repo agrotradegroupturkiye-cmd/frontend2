@@ -1,4 +1,1 @@
-type Props = { title?: string; children?: React.ReactNode };
-export default function Component(props: Props) {
-  return <div>{props.title || "Компонент"}{props.children}</div>;
-}
+export default function UserCard({ user }) { return <div className="border p-2 rounded">{user.name}</div>; }
