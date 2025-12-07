@@ -1,5 +1,12 @@
 'use client';
-import Button from './Button';
-import Card from './Card';
-import TabGroup from './TabGroup';
-export { Button, Card, TabGroup };
+import React from 'react';
+
+export function Card({ children, className='' }) {
+  return (
+    <div className={`bg-white rounded-lg shadow-md p-4 transition-all duration-300 ease-in-out ${className}`}>
+      {children}
+    </div>
+  );
+}
+
+export default Card;
