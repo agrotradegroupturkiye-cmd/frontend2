@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* базовые глобальные стили */
+body {
+  /* @apply removed for diagnostic: original utilities commented out */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* контейнер */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium;
+  }
+}
